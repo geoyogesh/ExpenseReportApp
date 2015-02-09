@@ -1,0 +1,14 @@
+{
+  "name": "ExpenseReportApp",
+  "version": "0.1.0",
+  "description": "A Demo application using node and dojo",
+  "main": "server.js",
+  "author": {
+    "name": "Yogesh",
+    "email": "geoyogesh@gmail.com"
+  },
+  "dependencies": {
+    "express": "^4.11.2",
+    "vash": "^0.7.12-1"
+  }
+}
