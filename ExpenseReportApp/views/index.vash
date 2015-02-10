@@ -2,10 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>@model.title</title>
+    <title>Expense Report App</title>
     <link href="/css/site.css" rel="stylesheet" />
+    <script type="text/javascript">
+    var dojoConfig = {
+        async:true,
+        packages:[
+        {
+            name:"app",
+            location:"/js/app/"
+        }
+    ]
+    };
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.3/dojo/dojo.js"></script>
 </head>
 <body>
 <div>@model.title</div>
+    <h1>Expense Report App</h1>
+    <form id="loginForm">
+        Employee Number:<br>
+        <input type="text" name="employeeNumber">
+        <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript">
+        require(["app/home"], function () {
+
+        });
+    </script>
 </body>
 </html>
